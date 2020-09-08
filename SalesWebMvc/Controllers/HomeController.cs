@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SalesWebMvc.Models;
+using SalesWebMvc.Models.ViewModels;
 
 namespace SalesWebMvc.Controllers {
     public class HomeController : Controller {
@@ -14,7 +14,7 @@ namespace SalesWebMvc.Controllers {
 
         public IActionResult About() {
             ViewData["Message"] = "Your application description page.";
-
+            
             return View();
         }
 
